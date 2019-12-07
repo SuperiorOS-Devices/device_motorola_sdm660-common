@@ -417,7 +417,7 @@ public class KeyHandler implements DeviceKeyHandler {
         return node;
     }
 
-    public KeyEvent handleKeyEvent(KeyEvent event) {
+    public boolean handleKeyEvent(KeyEvent event) {
         int scanCode = event.getScanCode();
 
         if (DEBUG) {
@@ -431,7 +431,7 @@ public class KeyHandler implements DeviceKeyHandler {
 
         boolean isFPScanCode = ArrayUtils.contains(sSupportedFPGestures, scanCode);
         if (!isFPScanCode) {
-            return event;
+            return false;
         }
 
         boolean isFPGestureEnabled = FileUtils.readOneLine(FP_HOME_NODE).equals("1");
@@ -441,12 +441,12 @@ public class KeyHandler implements DeviceKeyHandler {
 
         // We only want ACTION_UP event
         if (event.getAction() != KeyEvent.ACTION_UP) {
-            return null;
+            return true;
         }
 
         if (isFPScanCode){
             if (fpGesturePending) {
-                return event;
+                return false;
             } else {
                 resetFPGestureDelay();
                 fpGesturePending = true;
@@ -461,7 +461,7 @@ public class KeyHandler implements DeviceKeyHandler {
         if (isFPScanCode) {
             if ((!isFPGestureEnabled) || (!isScreenOn && !isFPGestureEnabledOnScreenOff)) {
                 resetDoubleTapOnFP();
-                return event;
+                return false;
             }
             if (!isScreenOn && isFPGestureEnabledOnScreenOff) {
                 processFPScreenOffScancode(scanCode);
@@ -470,10 +470,10 @@ public class KeyHandler implements DeviceKeyHandler {
             }
         }
 
-         return null;
+         return true;
             }
 
-/**	    public boolean canHandleKeyEvent(KeyEvent event) {
+	    public boolean canHandleKeyEvent(KeyEvent event) {
 		int scanCode = event.getScanCode();
         if (DEBUG) {
             Log.d(TAG, "DEBUG: action=" + event.getAction()
@@ -500,7 +500,7 @@ public class KeyHandler implements DeviceKeyHandler {
         }
         public Intent isActivityLaunchEvent(KeyEvent event) {
                 return null;
-    }**/
+    }
 
     private void processFPScancode(int scanCode) {
         int action = 0;
