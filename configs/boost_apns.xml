@@ -1,0 +1,8 @@
+     <apn carrier="Boost" mcc="310" mnc="120" apn="cinet.spcs" type="supl,mms,dun,fota" mmsc="http://mm.myboostmobile.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+     <apn carrier="Boost" mcc="310" mnc="120" apn="x.boost.ispsn" type="default,supl,mms,dun,fota,ims,cbs,ia" bearer_bitmask="4|5|6|7|8|12|13|14" mmsc="http://mm.myboostmobile.com" mmsproxy="oap7.sprintpcs.com" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+     <apn carrier="Sprint" mcc="311" mnc="870" type="default,mms,fota" bearer_bitmask="4|5|6|7|8|12" protocol="IPV4V6" roaming_protocol="IPV4V6" authtype="3" mmsc="http://mm.myboostmobile.com" mmsproxy="68.28.31.7" mmsport="80" />
+     <apn carrier="Sprint" mcc="311" mnc="870" type="default,mms,dun,fota" bearer_bitmask="4|5|6|7|8|12" profile_id="1" protocol="IPV4V6" roaming_protocol="IPV4V6" authtype="3" mmsc="http://mm.myboostmobile.com" mmsproxy="68.28.31.7" mmsport="80" />
+     <apn carrier="Sprint" mcc="311" mnc="870" apn="cinet.spcs" type="default,mms" bearer_bitmask="1|2|3|9|10|11|15|16" server="*" user="none" password="none" mmsc="http://mm.myboostmobile.com" mmsproxy="68.28.31.7" mmsport="80" />
+     <apn carrier="Sprint" mcc="311" mnc="870" apn="mms_over_wifi" type="wifi" server="*" user="*" password="*" mmsc="http://mm.myboostmobile.com" mmsproxy="68.28.31.7" mmsport="80" />
+     <apn carrier="Sprint" mcc="311" mnc="870" apn="otasn" type="fota,ia" bearer_bitmask="13|14" protocol="IPV4V6" />
+     <apn carrier="Sprint" mcc="311" mnc="870" apn="ims" type="ims" protocol="IPV4V6" />
