@@ -369,7 +369,20 @@ on boot
     mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
 
     # FPC button permissions
-    chown system system /sys/bus/spi/devices/spi8.0/key_enable
+    chown system system /sys/homebutton/enable
+    chown system system /sys/homebutton/enable_off
+    chown system system /sys/homebutton/haptic
+    chown system system /sys/homebutton/haptic_off
+    chown system system /sys/homebutton/key
+    chown system system /sys/homebutton/key_hold
+    chown system system /sys/homebutton/key_dbltap
+    chown system system /sys/homebutton/key_left
+    chown system system /sys/homebutton/key_right
+    chown system system /sys/homebutton/key_screenoff
+    chown system system /sys/homebutton/key_screenoff_hold
+    chown system system /sys/homebutton/key_screenoff_dbltap
+    chown system system /sys/homebutton/key_screenoff_left
+    chown system system /sys/homebutton/key_screenoff_right
 
     # Change ownership and permission for AMPS factory testing
     chown root oem_5004 /sys/devices/soc/a800000.ssusb/modusb_enable
