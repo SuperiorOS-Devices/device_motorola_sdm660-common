@@ -430,6 +430,9 @@
         <item>/system/priv-app/MotoActions/MotoActions.apk</item>
     </string-array>
 
+    <!-- Whether device ignores the RSSNR signal implementation -->
+     <bool name="config_ignoreRssnrSignalLevel">true</bool>
+
     <string-array name="config_deviceKeyHandlerClasses" translatable="false">
         <item>com.moto.actions.KeyHandler</item>
     </string-array>
