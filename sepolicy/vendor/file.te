@@ -23,3 +23,6 @@ type sysfs_healthd, fs_type, sysfs_type, mlstrustedobject;
 
 # Homebutton
 type sysfs_homebutton, fs_type, sysfs_type, mlstrustedobject;
+
+# FPS Info
+type sysfs_fps, sysfs_type, fs_type;
