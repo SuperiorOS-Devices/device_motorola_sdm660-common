@@ -528,6 +528,9 @@ on post-fs-data
     # Create directory used for dump collection
     mkdir /data/vendor/ssrdump 0770 root system
 
+    # Chown node for Smart_Charging
+    chown system system /sys/class/power_supply/battery/battery_charging_enabled
+
     # Create directory used by display clients
     mkdir /data/vendor/display 0770 system graphics
 
