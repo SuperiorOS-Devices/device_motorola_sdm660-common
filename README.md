@@ -5,4 +5,4 @@ Device configuration for Motorola SDM660 Devices
 
 Supported devices :
 
-Payton, Evert, Chef, Beckham, Lake
+Payton, Evert, Chef, Beckham, Lake.
