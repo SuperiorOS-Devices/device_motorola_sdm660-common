@@ -97,6 +97,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.bluetooth.soc=cherokee \
     ro.bluetooth.a4wp=false
 
+# Blur
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.supports_background_blur=1 \
+    persist.sys.sf.disable_blurs=1 \
+    ro.sf.blurs_are_expensive=1
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.expose.aux=1 \
@@ -121,7 +127,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.hwc_set_default_colormode=true \
     debug.sf.enable_hwc_vds=1 \
     debug.sf.hw=1 \
-    debug.sf.latch_unsignaled=0 \
+    debug.sf.latch_unsignaled=1 \
     vendor.gralloc.enable_fb_ubwc=1 \
     debug.sf.disable_backpressure=1 \
     dev.pm.dyn_samplingrate=1 \
