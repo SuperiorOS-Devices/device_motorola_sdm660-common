@@ -117,6 +117,9 @@ TARGET_FS_CONFIG_GEN += \
 TARGET_INIT_VENDOR_LIB := //$(PLATFORM_PATH):libinit_sdm660
 TARGET_RECOVERY_DEVICE_MODULES := libinit_sdm660
 
+# IPA
+TARGET_USES_NO_MTU_IPACM := true
+
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 ehci-hcd.park=3
 BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1 service_locator.enable=1
