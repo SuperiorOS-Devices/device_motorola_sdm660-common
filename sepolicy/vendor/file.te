@@ -1,4 +1,5 @@
 type debugfs_rmts, debugfs_type, fs_type;
+type debugfs_rpm, debugfs_type, fs_type;
 type debugfs_wlan, debugfs_type, fs_type;
 type fsg_firmware_file, file_type, contextmount_type, vendor_file_type;
 type perfd_socket, file_type;
