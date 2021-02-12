@@ -2639,7 +2639,7 @@ case "$target" in
             echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
             echo 20000 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
             echo 500 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
-            echo 787200 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+            echo 300000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 
             # online CPU4
             echo 1 > /sys/devices/system/cpu/cpu4/online
@@ -2647,7 +2647,7 @@ case "$target" in
             echo "schedutil" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
             echo 20000 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us
             echo 500 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us
-            echo 614400 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
+            echo 300000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
 
             # bring all cores online
             echo 1 > /sys/devices/system/cpu/cpu0/online
