@@ -2507,16 +2507,16 @@ case "$target" in
             # online CPU0
             echo 1 > /sys/devices/system/cpu/cpu0/online
             # configure governor settings for little cluster
-            echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-            echo 20000 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
-            echo 500 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
+            echo "blu_schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+            echo 20000 > /sys/devices/system/cpu/cpu0/cpufreq/blu_schedutil/down_rate_limit_us
+            echo 500 > /sys/devices/system/cpu/cpu0/cpufreq/blu_schedutil/up_rate_limit_us
             echo 633600 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
             # online CPU4
             echo 1 > /sys/devices/system/cpu/cpu4/online
             # configure governor settings for big cluster
-            echo "schedutil" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
-            echo 20000 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us
-            echo 500 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us
+            echo "blu_schedutil" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
+            echo 20000 > /sys/devices/system/cpu/cpu4/cpufreq/blu_schedutil/down_rate_limit_us
+            echo 500 > /sys/devices/system/cpu/cpu4/cpufreq/blu_schedutil/up_rate_limit_us
             echo 1113600 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
 
             # bring all cores online
@@ -2636,17 +2636,17 @@ case "$target" in
             # online CPU0
             echo 1 > /sys/devices/system/cpu/cpu0/online
             # configure governor settings for Big cluster(CPU0 to CPU3)
-            echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-            echo 20000 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
-            echo 500 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
+            echo "blu_schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+            echo 20000 > /sys/devices/system/cpu/cpu0/cpufreq/blu_schedutil/down_rate_limit_us
+            echo 500 > /sys/devices/system/cpu/cpu0/cpufreq/blu_schedutil/up_rate_limit_us
             echo 300000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 
             # online CPU4
             echo 1 > /sys/devices/system/cpu/cpu4/online
             # configure governor settings for Little cluster(CPU4 to CPU7)
-            echo "schedutil" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
-            echo 20000 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us
-            echo 500 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us
+            echo "blu_schedutil" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
+            echo 20000 > /sys/devices/system/cpu/cpu4/cpufreq/blu_schedutil/down_rate_limit_us
+            echo 500 > /sys/devices/system/cpu/cpu4/cpufreq/blu_schedutil/up_rate_limit_us
             echo 300000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
 
             # bring all cores online
