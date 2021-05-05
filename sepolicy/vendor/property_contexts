@@ -37,3 +37,5 @@ persist.vendor.camera.     u:object_r:camera_prop:s0
 
 # Power
 vendor.powerhal.                        u:object_r:vendor_power_prop:s0
+
+qemu.hw.mainkeys           u:object_r:qemu_hw_mainkeys_prop:s0
