@@ -17,7 +17,7 @@
   android:viewportWidth="24.0"
   android:viewportHeight="24.0">
  <path
-  android:fillColor="#FEFFFFFF"
+  android:fillColor="?android:attr/colorControlNormal"
   android:strokeColor="#FFFEFEFE"
   android:strokeWidth="0.24"
   android:strokeLineJoin="round"
