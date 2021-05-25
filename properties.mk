@@ -124,7 +124,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.disable_backpressure=1 \
     dev.pm.dyn_samplingrate=1 \
     ro.opengles.version=196610 \
-    ro.qualcomm.cabl=0
+    ro.qualcomm.cabl=0 \
+    debug.cpurend.vsync=false \
+    debug.performance.tuning=1 \
+    debug.sf.gpu_comp_tiling=1 \
+    debug.sf.enable_egl_image_tracker=1 \
+    debug.sf.recomputecrop=0
 
 # Disable iorapd
 PRODUCT_PROPERTY_OVERRIDES += \
