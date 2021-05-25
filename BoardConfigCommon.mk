@@ -80,6 +80,9 @@ TARGET_BOOTANIMATION_HALF_RES := true
 USE_CAMERA_STUB := true
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
+# Compile libhwui in performance mode
+HWUI_COMPILE_FOR_PERF := true
+
 # Charger
 WITH_LINEAGE_CHARGER := false
 
