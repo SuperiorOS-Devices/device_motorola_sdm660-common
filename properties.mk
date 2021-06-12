@@ -126,10 +126,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610 \
     ro.qualcomm.cabl=0
 
-# Disable iorapd
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.iorapd.enable=false
-    
 # Factory reset partition
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/platform/soc/c0c4000.sdhci/by-name/frp
